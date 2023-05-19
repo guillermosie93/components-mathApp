@@ -1,0 +1,130 @@
+{
+        "components": {
+        "navBar": [
+            {
+                "href": "/",
+                "name": "Home",
+                "id": 1,
+                "blank": false,
+                "icon": "bi bi-house-door-fill"
+            },
+            {
+                "href": "/about-app",
+                "name": "Acerca de",
+                "id": 3,
+                "blank": false,
+                "icon": "bi bi-people-fill"
+            },
+            {
+                "href": "/juegos",
+                "name": "Juegos",
+                "id": 2,
+                "blank": false,
+                "icon": "bi bi-dpad-fill"
+            },
+            {
+                "href": "/contacto",
+                "name": "Contacto",
+                "id": 4,
+                "blank": false,
+                "icon": "bi bi-headset"
+            }
+        ],
+        "contactForm":[
+            {
+                "name": "user_name",
+                "require": true,
+                "label": "Nombre",
+                "type": "text"
+            },
+            {
+                "name": "user_lastName",
+                "require": false,
+                "label": "Apellido",
+                "type": "text"
+            },
+            {
+                "name": "user_telphone",
+                "require": false,
+                "label": "Telefono de contacto",
+                "type": "tel"
+            },
+            {
+                "name": "user_email",
+                "require": true,
+                "label": "Email",
+                "type": "email"
+            },
+            {
+                "name": "want_download",
+                "require": true,
+                "label": "Quiero una demo",
+                "type": "checkbox"
+            },
+            {
+                "name": "message",
+                "require": true,
+                "label": "Tu Mensaje",
+                "type": "textarea"
+            }
+        ],
+        "games": [
+            {
+                "id": 1,
+                "img": {
+                    "btn": "btnReconocer",
+                    "modal": "count"
+                },
+                "function": {
+                    "open": "openModal1",
+                    "close": "closeModal1",
+                    "state": "isOpenModal1"
+                },
+                "title": "Contador de globos",
+                "text": "Juego apuntado a reconocer los numeros; contando primero la cantidad de globos y luego eligiendo esa cantidad."
+            },
+            {
+                "id": 2,
+                "img": {
+                    "btn": "btnMemorama",
+                    "modal": "memorex"
+                },
+                "function": {
+                    "open": "openModal2",
+                    "close": "closeModal2",
+                    "state": "isOpenModal2"
+                },
+                "title": "Memorama de numeros",
+                "text": "Memorama con numeros, en el que se podrá reconocer los numeros y buscando su pareja."
+            },
+            {
+                "id": 3,
+                "img": {
+                    "btn": "btnApple",
+                    "modal": "getapple"
+                },
+                "function": {
+                    "open": "openModal3",
+                    "close": "closeModal3",
+                    "state": "isOpenModal3"
+                },
+                "title": "Recolector de manzanas",
+                "text": "Juego apuntado aprender a contar, en el que se deberá recolectar la cantidad de manzanas arrastrandolas a la canasta."  
+            },
+            {
+                "id": 4,
+                "img": {
+                    "btn": "btnMax",
+                    "modal": "tobig"
+                },
+                "function": {
+                    "open": "openModal4",
+                    "close": "closeModal4",
+                    "state": "isOpenModal4"
+                },
+                "title": "Elegir el numero mas grande",
+                "text": "Juego que permite seleccionar un numero por sobre otro según el valor mas grande. Hasta obtener 5 estrellas."
+            }
+        ]
+    }
+}
